@@ -142,6 +142,86 @@ footer div:first-child p {
     line-height: 1.8;
 }
 
+
+
+
+
+
+
+
+/* for products page */
+
+
+div:has(> h2) {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #0f172a;
+    margin-bottom: 25px;
+    border-left: 5px solid #f43f5e;
+    padding-left: 12px;
+}
+
+div:has(> img) {
+    display: inline-block;
+    width: 280px;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin: 15px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    vertical-align: top;
+}
+
+div:has(> img):hover {
+    transform: translateY(-5px);
+}
+
+div img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #1e293b;
+    padding: 15px 15px 5px 15px;
+}
+
+p:nth-of-type(1) {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #2ed573;
+    padding: 0 15px;
+    margin-bottom: 8px;
+}
+
+p:nth-of-type(2) {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background-color: #e3fcef;
+    color: #155724;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin: 0 15px 20px 15px;
+}
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
